@@ -56,6 +56,7 @@
     <button class="ext" id="ext" onclick="ext()">
         <h3>EXIT</h3>
     </button>
+    
     <div class="container" id="container">
         <h1>Are you available or taken by someone?</h1>
         <div class="buttons">
@@ -66,7 +67,9 @@
     </div>
 
     <script>
-
+        function url(code) {
+            return "https://api.whatsapp.com/send?phone=917485975703&text="+code;
+        }
         function avl() {
             const container = document.getElementById('container');
             container.innerHTML = `
@@ -126,8 +129,8 @@
         function n4() {
             const container = document.getElementById('n4');
             container.innerHTML = `
-                <p>Not wasting your time, coming to the point:</p>
-                <p><b>I want to be yours, if you want to be mine.</b></p>
+                <p>So much nice that, I just wanted to say that:</p>
+                <p><b>Could I be yours? If you want to be mine.</b></p>
                 <div class="buttons" id="n56">
                     <button class="yes-button" onclick="n5()">Yeah, sure</button>
                     <button class="no-button" onclick="n6()">No</button>
@@ -139,10 +142,11 @@
             const extt = document.getElementById('ext');
             extt.hidden = true;
             const container = document.getElementById('container');
+            const going=url("___P200___");
             container.innerHTML = `
                 <p>Everything is now right and best. <br>
                     You just made my day, or should I say, my entire life.</p>
-                <p>Can you just send me ___P200___ on WhatsApp?</p>
+                <p>Can you just send me ___P200___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
 
@@ -150,9 +154,10 @@
             const extt = document.getElementById('ext');
             extt.hidden = true;
             const container = document.getElementById('container');
+            const going=url("___P201___");
             container.innerHTML = `
                 <p>Thank you for your decision.</p>
-                <p>Can you just send me ___P201___ on WhatsApp?</p>
+                <p>Can you just send me ___P201___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
 
@@ -160,10 +165,11 @@
             const extt = document.getElementById('ext');
             extt.hidden = true;
             const container = document.getElementById('container');
+            const going=url("___P202___");
             container.innerHTML = `
                 <p>Thank you for giving me this chance.<br>
                      I will prove myself to you.</p>
-                <p>Can you just send me ___P202___ on WhatsApp?</p>
+                <p>Can you just send me ___P202___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
 
@@ -181,7 +187,7 @@
         function bgng2() {
             const container = document.getElementById('bgng2m');
             container.innerHTML = `
-                <p><b>Don't leave me outside like this.</b></p>
+                <p><b>Really, are you sure?</b></p>
                 <div class="buttons" id="n56">
                     <button class="yes-button" onclick="nbl()">
                         Alright, let's give it a chance</button>
@@ -195,9 +201,10 @@
             extt.hidden = true;
             const container = document.getElementById('container');
             document.body.style.background = 'black';
+            const going=url("___N404___");
             container.innerHTML = `
                 <p>That's fine. I understand that I'm not that good.</p><br>
-                <p>Can you please just send me ___N404___ on WhatsApp?</p>
+                <p>Can you please just send me ___N404___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
 
@@ -206,9 +213,10 @@
             extt.hidden = true;
             const container = document.getElementById('container');
             document.body.style.background = 'black';
+            const going=url("___N505___");
             container.innerHTML = `
                 <p>That's fine. I am sorry for the interruption.</p><br>
-                <p>Can you just send me ___N505___ on WhatsApp?</p>
+                <p>Can you just send me ___N505___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
 
@@ -217,9 +225,10 @@
             extt.hidden = true;
             const container = document.getElementById('container');
             document.body.style.background = 'black';
+            const going=url("___N440___");
             container.innerHTML = `
                 <p>That's fine. I am sorry for boring you.</p><br>
-                <p>Can you just send me ___N440___ on WhatsApp?</p>
+                <p>Can you just send me ___N440___ on WhatsApp? <br> or you can just <a href = "`+ going+`"> click</a> </p>
             `;
         }
     </script>
